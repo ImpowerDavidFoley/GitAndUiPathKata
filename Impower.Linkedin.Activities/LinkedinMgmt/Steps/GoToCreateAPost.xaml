@@ -1,0 +1,111 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GoToCreateAPost" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1022.4000000000001,826.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GoToCreateAPost" sap:VirtualizedContainerService.HintSize="475.2,600.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="HomeScreen" sap:VirtualizedContainerService.HintSize="433.6,508" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1ad56a39-9f96-4e38-abc9-7f00d58f5c7c" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,251.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'StartAPost'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" ContentHash="pFQ8CGlH40KI4OcYS5nhYg" DesignTimeRectangle="655, 247, 565, 60" ElementType="Button" FriendlyName="'Start a post'" FullSelectorArgument="&lt;webctrl id='ember33' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember33' tag='BUTTON' type='' aaname='      Start a post ' check:text='Start a post' /&gt;" Guid="133c6c27-8628-4685-b16b-eabfa4bbbf2d" ImageBase64="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" InformativeScreenshot="9d4c9dc7fab3aa2872f44c34c783bc89.png" Reference="Div1j-NQBkGCwyO7_QQXaA/oXughBT57k-cWXHb0hbFwg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(31) Feed | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="676, 264, 91, 26" ElementType="Text" FriendlyName="'Start a post'" FullSelectorArgument="&lt;webctrl parentid='ember33' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember33' tag='SPAN' type='' aaname='     Start a post ' check:text='Start a post' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAeCAYAAABKSMI8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATHSURBVGhD7ZjnSzRJEMbvr/WjIOIHQREVE2YxiwEzophFUURFzIgo5qyYUBRzQuv49bs1N7uO63jIzd1788Dgbk91haerqmv9Q3x4Bp98D+GT7yF88j2ET76H8Mn3ED75HsIn30P45HsIn3wP8YH8i4sLaWlpkeTkZImIiJDIyEjJz8+XjY2NgISPn0IQ+RAcHx9vSIf8vLw8yczMNAcwNTVlZB4fH2VsbEzq6urk7u7OrP0Udnd3pampSebm5gIr/32E48si/+npSWpqagzxExMT8v7+Hngjcn5+Lqurq+bz6empJCUlmWr4afJ7enqMfT3o3wHh+LLI5wUCiYmJcnJyElj9CJ/878EV+S8vL1JfX2+C7+vrk9fX18Cbv6Dk2B8UYwD5+fl5KSsrk6ioKPMuJyfHVIxWkTqCnePjYykvLzdO7ezsmPVQ3dhzAvrW19elurpaYmNjjWxaWprMzMzI29tbQOoj7PYvLy+lvb3d+IqOjo6OD+RcXV0ZGW3F/O3s7JSbm5uAxC9f1tbWpLi42LRnnsrKSrM3HF8gqOdvbW1Zhuj1i4uLQYfA97a2NomJiZGEhATp6uqSoaEhub6+NgpTU1NNYP39/ZbTBLa3t2f2a/AVFRXmwQ7kU2noKSgoMGs4jw7sOUGrFB3IESS2CXxhYSEg9RFqH6J42A/pVDt2GxsbTfsFJAcHik7kSMjCwkIjl5WVZQYTgD1ksI8fPOjGVji+QBD5AKVVVVXGCA8GDw4OAm8/LyM+c9p2TE5OGh2Dg4Pmu+6Njo6W7u5uK1CFZspXbYcq5R6y30sMC+xlUnOqWqD2IWtpacnaDxlFRUVmnQTU+4/v09PTlhxVxWFrTKyrz/ZpEPv4CD7jC3wgH6B0c3NTSkpKjGKylzIH4ZRB/vj4uMkgnZLYj4NA95JRkBcKt+QDbNNmWltbJTs722p1VJ4GHgq1X1paKg8PD4HVXxgdHbVsn52dSUpKiqMcVUql6DviZR98cKChtr9NvoKTZkxCOZlARnymjMPhkGg1EELGUGbsDSW/trZWnp+fzZodbsnXloC9hoYGQ8DIyIjZ64Z8Jxlsqu1wcsRM7Bo/72kl+MJ+/uKLVt/fJh+EbnZSxixLq4qLiwtqURpQKPmfEeSGfBKC+wQ5Mk1Bu2DNDfmhh0+l9/b2mv2zs7OWXLjMJ17iVmCT4YLfRvYYnPhSWOTf39+bHm1XiFNkMO1DHVFlubm51q2PUpTbx1SqhPaDI98lHz8+A/vYj5z2WXsvdkO+vY0CrSQuxaOjI1c9n2zHDlOTvgdMPk4x2/lSWOQrgRikX3OC6enpRhH9VH913t7eGjnWGStpLTjMrc4a75gMGCN1v1vytVJoXeij5TlheHjYyOmEQSbjM2tuyM/IyDC+0R7t087AwIAhGOjkBx+h0w5xc0lrIjhNXcvLy0aPE1/cKcAinx4FwZCm/Qvjzc3Ncnh4GHS629vbVrCcKJcnp4ojHBTBcBnySxkZt+STcTiHDh6yywnIMS3hJw9yKysrxpYb8pHZ39+3Bgr9jRA6Jen/uZQP5Ojn2AccFDEyevIenyGYqvqKL/Blz/+d8NXh/9PwyfcQPvkewiffQ/yvyP+3wSffQ/jkewaRPwGdTAbu+s2L8gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="MCSD9KbwjE6-vsmQhS_5nA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFVSURBVDhPnZLLSsNQEIbjQ7j3EbJ2dR7BRyi4FXTpMt4QdFE3LoVakQoikVhLsUo0SGsRW7oxKIKpBVdecOVynH9yzqkXMJqBr+efmZyvodRxvMBlfCbMgYLAn67FtHqe/IvZxi2JBB+T1WsC5d6jYPosrGC80qGldp9MFeoxYZaFFYxutGgqutPXiZTfI8yysIKR9YgALro7V5L/ghU4xRNSux39/fwGnMPBq+T7t3fBVLE7IDwvWMHKEanKpX6EBZzDhxfd/Sy3xK/Pd4aC5Tqp7bZes4Bz2H/WXdrPNGLdEU3s8Q/Id4aCxRqprQu95gucwyQV4MQemPIi/g9gZgULh6TKLb1mAecweZKME3tgyjtjAWZWMF8ltdnUaxZw/iLgPTDlnd6kMyuYO/hdwHtgSgSYfRaMrR3LAiAX9ruScRqB2atS85vAC9DkQQRKQi6Cwgf6q7q4SScTvQAAAABJRU5ErkJggg==" InformativeScreenshot="583c82f36f2cf900c6e5b6eef21f282d.png" Reference="Div1j-NQBkGCwyO7_QQXaA/ZdKt3hdkJk2fX7AUtXvxug" Selector="&lt;html app='chrome.exe' title='(31) Feed | LinkedIn'/&gt;" Url="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
